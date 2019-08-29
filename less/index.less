@@ -182,16 +182,33 @@ header {
       font-size: 1.3em;
       background: #3a3480;
       width: 49.5%;
-      height: 525px;
+      height: 545px;
       line-height: 30px;
       color: white;
       padding: 20px 15px;
       border: 1px solid #C0326A;
 
+      @media (min-width:800px) {
+        width: 45%;
+        height: 500px;
+        margin: 10px auto;
+      }
+      @media (min-width:1000px) {
+        width: 47%;
+        height: 710px;
+      }
+
       img {
         width: 100%;
         height: 35%;
         margin-bottom: 20px;
+
+        @media (min-width:800px) {
+          height: 50%;
+        }
+        @media (min-width:1000px) {
+          height: 75%;
+        }
       }
 
       .btn {
