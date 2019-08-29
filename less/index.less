@@ -222,6 +222,9 @@ header {
         width: 45%;
         height: 400px;
       }
+      @media(min-width:1000px) {
+        height: 450px;
+      }
 
       img {
         height: 50%;
@@ -237,13 +240,21 @@ header {
         }
 
         @media (min-width:1000px) {
-          height: 75%;
+          height: 50%;
         }
       }
 
       .btn {
         text-decoration: none;
         color: #FAA220;
+
+        @media(min-width:1000px) {
+          background: #C0326A;
+          padding: 15px 30px;
+          border-radius: 15px;
+          width: 40%;
+          margin: 15px auto 0 auto;
+        }
 
         &:hover {
           color: #14B1AB;

@@ -214,6 +214,11 @@ header .navbar a:hover {
     height: 400px;
   }
 }
+@media (min-width: 1000px) {
+  .container .stories .story {
+    height: 450px;
+  }
+}
 .container .stories .story img {
   height: 50%;
   width: 100%;
@@ -231,12 +236,21 @@ header .navbar a:hover {
 }
 @media (min-width: 1000px) {
   .container .stories .story img {
-    height: 75%;
+    height: 50%;
   }
 }
 .container .stories .story .btn {
   text-decoration: none;
   color: #FAA220;
+}
+@media (min-width: 1000px) {
+  .container .stories .story .btn {
+    background: #C0326A;
+    padding: 15px 30px;
+    border-radius: 15px;
+    width: 40%;
+    margin: 15px auto 0 auto;
+  }
 }
 .container .stories .story .btn:hover {
   color: #14B1AB;
