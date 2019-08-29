@@ -192,6 +192,11 @@ header {
     @media(min-width:500px) {
       flex-flow: row wrap;
     }
+    
+    @media (min-width:800px) {
+      justify-content: space-around;
+      margin: 0 auto;
+    }
 
     .story {
       display: flex;
@@ -212,6 +217,12 @@ header {
         margin: 0;
       }
 
+      @media(min-width:800px) {
+        margin: 10px auto;
+        width: 45%;
+        height: 400px;
+      }
+
       img {
         height: 50%;
         width: 100%;
@@ -222,7 +233,7 @@ header {
         }
 
         @media (min-width:800px) {
-          height: 40%;
+          height: 50%;
         }
 
         @media (min-width:1000px) {
