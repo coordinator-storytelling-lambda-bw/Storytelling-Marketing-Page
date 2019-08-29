@@ -119,14 +119,13 @@ table {
 }
 
 header {
-  max-width: 500px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   margin: 10px auto;
 
   .logo {
-    margin: 10px 150px;
+    margin: 0 auto;
   }
 
   h1 {
@@ -142,22 +141,36 @@ header {
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    width: 300px;
+
+    @media (min-width:500px) {
+      flex-flow: row nowrap;
+      width: 100%;
+    }
 
     a {
       text-decoration: none;
       color: #3A3480;
       font-size: 1.2em;
-      margin: 0 10px;
+      margin: 0 auto;
       font-weight: bold;
+      background: #f3f3f3;
+      padding: 20px 0;
+      width: 100%;
+      text-align: center;
 
       &:hover {
         color: #C0326A;
+        background: #107BA3;
       }
     }
   }
 }
 
 .container {
+  width: 98vw;
+  margin: 0 auto;
 
   .featured {
     width: 75%;
@@ -173,39 +186,56 @@ header {
 
   .stories {
     display: flex;
-    flex-flow: row wrap;
-    margin: 20px 10px;
+    flex-direction: column;
+    margin: 20px auto;
+
+    @media(min-width:500px) {
+      flex-flow: row wrap;
+    }
+    
+    @media (min-width:800px) {
+      justify-content: space-around;
+      margin: 0 auto;
+    }
 
     .story {
       display: flex;
-      flex-flow: column wrap;
-      font-size: 1.3em;
+      flex-direction: column;
+      font-size: 1.1em;
       background: #3a3480;
-      width: 49.5%;
-      height: 545px;
-      line-height: 30px;
+      width: 90%;
+      height: 510px;
+      line-height: 25px;
       color: white;
       padding: 20px 15px;
       border: 1px solid #C0326A;
+      margin: 0 auto;
 
-      @media (min-width:800px) {
-        width: 45%;
+      @media (min-width:500px) {
+        width: 49.5%;
         height: 500px;
-        margin: 10px auto;
+        margin: 0;
       }
-      @media (min-width:1000px) {
-        width: 47%;
-        height: 710px;
+
+      @media(min-width:800px) {
+        margin: 10px auto;
+        width: 45%;
+        height: 400px;
       }
 
       img {
+        height: 50%;
         width: 100%;
-        height: 35%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+
+        @media (min-width:500px) {
+          height: 40%;
+        }
 
         @media (min-width:800px) {
           height: 50%;
         }
+
         @media (min-width:1000px) {
           height: 75%;
         }
