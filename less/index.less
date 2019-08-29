@@ -143,7 +143,12 @@ header {
     justify-content: center;
     flex-direction: column;
     width: 300px;
- 
+
+    @media (min-width:500px) {
+      flex-flow: row nowrap;
+      width: 100%;
+    }
+
     a {
       text-decoration: none;
       color: #3A3480;
@@ -154,7 +159,7 @@ header {
       padding: 20px 0;
       width: 100%;
       text-align: center;
-        
+
       &:hover {
         color: #C0326A;
         background: #107BA3;
@@ -184,43 +189,46 @@ header {
     flex-direction: column;
     margin: 20px auto;
 
+    @media(min-width:500px) {
+      flex-flow: row wrap;
+    }
+
     .story {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.1em;
-        background: #3a3480;
-        width: 90%;
-        height: 425px;
-        line-height: 25px;
-        color: white;
-        padding: 20px 15px;
-        border: 1px solid #C0326A;
-        margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      font-size: 1.1em;
+      background: #3a3480;
+      width: 90%;
+      height: 510px;
+      line-height: 25px;
+      color: white;
+      padding: 20px 15px;
+      border: 1px solid #C0326A;
+      margin: 0 auto;
 
       @media (min-width:500px) {
-        
+        width: 49.5%;
+        height: 500px;
+        margin: 0;
       }
 
-      @media (min-width:800px) {
-        width: 45%;
-        height: 500px;
-        margin: 10px auto;
-        // width: 47%;
-        // height: 710px;
-      }
       img {
-        height: 45%;
+        height: 50%;
         width: 100%;
         margin-bottom: 10px;
-      }
 
-        @media (max-width:800px) {
-          height: 50%;
+        @media (min-width:500px) {
+          height: 40%;
         }
 
-        @media (max-width:1000px) {
+        @media (min-width:800px) {
+          height: 40%;
+        }
+
+        @media (min-width:1000px) {
           height: 75%;
         }
+      }
 
       .btn {
         text-decoration: none;
