@@ -171,6 +171,7 @@ header {
 .container {
   width: 98vw;
   margin: 0 auto;
+  max-width: 1300px;
 
   .featured {
     width: 75%;
@@ -192,7 +193,7 @@ header {
     @media(min-width:500px) {
       flex-flow: row wrap;
     }
-    
+
     @media (min-width:800px) {
       justify-content: space-around;
       margin: 0 auto;
@@ -222,6 +223,7 @@ header {
         width: 45%;
         height: 400px;
       }
+
       @media(min-width:1000px) {
         height: 450px;
       }
@@ -258,6 +260,65 @@ header {
 
         &:hover {
           color: #14B1AB;
+        }
+      }
+    }
+  }
+
+  .about-h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: #D65F28;
+    line-height: 30px;
+  }
+
+  .info-bubble {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    text-align: center;
+
+    .info {
+
+      @media(min-width:800px) {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      @media(min-width:1000px) {
+        width: 40%;
+      }
+
+      .profile-pic {
+        border-radius: 50%;
+        margin-bottom: 10px;
+
+        @media(min-width:500px) {
+          width: 75%;
+          margin: 0 auto 10px auto;
+        }
+
+        @media(min-width:1000px) {
+          width: 95%;
+        }
+
+      }
+
+      h3 {
+        font-size: 1em;
+
+        @media(min-width:500px) {
+          font-size: 1.1em;
+        }
+        @media(min-width:800px) {
+          color: #107BA3;
+        }
+      }
+
+      a {
+
+        img {
+          width: 50px;
         }
       }
     }

@@ -159,6 +159,7 @@ header .navbar a:hover {
 .container {
   width: 98vw;
   margin: 0 auto;
+  max-width: 1300px;
 }
 .container .featured {
   width: 75%;
@@ -254,6 +255,60 @@ header .navbar a:hover {
 }
 .container .stories .story .btn:hover {
   color: #14B1AB;
+}
+.container .about-h1 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #D65F28;
+  line-height: 30px;
+}
+.container .info-bubble {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .container .info-bubble .info {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .container .info-bubble .info {
+    width: 40%;
+  }
+}
+.container .info-bubble .info .profile-pic {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .container .info-bubble .info .profile-pic {
+    width: 75%;
+    margin: 0 auto 10px auto;
+  }
+}
+@media (min-width: 1000px) {
+  .container .info-bubble .info .profile-pic {
+    width: 95%;
+  }
+}
+.container .info-bubble .info h3 {
+  font-size: 1em;
+}
+@media (min-width: 500px) {
+  .container .info-bubble .info h3 {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 800px) {
+  .container .info-bubble .info h3 {
+    color: #107BA3;
+  }
+}
+.container .info-bubble .info a img {
+  width: 50px;
 }
 footer {
   background: #FAA220;
