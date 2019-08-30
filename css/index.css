@@ -274,6 +274,11 @@ header .navbar a:hover {
     margin: 0 auto;
   }
 }
+@media (min-width: 1000px) {
+  .container .info-bubble .info {
+    width: 40%;
+  }
+}
 .container .info-bubble .info .profile-pic {
   border-radius: 50%;
   margin-bottom: 10px;
@@ -282,6 +287,11 @@ header .navbar a:hover {
   .container .info-bubble .info .profile-pic {
     width: 75%;
     margin: 0 auto 10px auto;
+  }
+}
+@media (min-width: 1000px) {
+  .container .info-bubble .info .profile-pic {
+    width: 95%;
   }
 }
 .container .info-bubble .info h3 {
