@@ -272,11 +272,21 @@ header {
     line-height: 30px;
   }
 
+
+
   .info-bubble {
     display: flex;
     flex-direction: column;
     margin: 10px auto;
     text-align: center;
+    
+    h3 {
+      font-size: 1em;
+    
+    @media(min-width:500px){
+      font-size: 1.1em;
+    }
+  }
 
     .profile-pic {
       border-radius: 50%;

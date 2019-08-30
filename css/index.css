@@ -268,6 +268,14 @@ header .navbar a:hover {
   margin: 10px auto;
   text-align: center;
 }
+.container .info-bubble h3 {
+  font-size: 1em;
+}
+@media (min-width: 500px) {
+  .container .info-bubble h3 {
+    font-size: 1.1em;
+  }
+}
 .container .info-bubble .profile-pic {
   border-radius: 50%;
   margin-bottom: 10px;
