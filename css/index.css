@@ -268,25 +268,36 @@ header .navbar a:hover {
   margin: 10px auto;
   text-align: center;
 }
-.container .info-bubble h3 {
-  font-size: 1em;
-}
-@media (min-width: 500px) {
-  .container .info-bubble h3 {
-    font-size: 1.1em;
+@media (min-width: 800px) {
+  .container .info-bubble .info {
+    width: 70%;
+    margin: 0 auto;
   }
 }
-.container .info-bubble .profile-pic {
+.container .info-bubble .info .profile-pic {
   border-radius: 50%;
   margin-bottom: 10px;
 }
 @media (min-width: 500px) {
-  .container .info-bubble .profile-pic {
+  .container .info-bubble .info .profile-pic {
     width: 75%;
     margin: 0 auto 10px auto;
   }
 }
-.container .info-bubble a img {
+.container .info-bubble .info h3 {
+  font-size: 1em;
+}
+@media (min-width: 500px) {
+  .container .info-bubble .info h3 {
+    font-size: 1.1em;
+  }
+}
+@media (min-width: 800px) {
+  .container .info-bubble .info h3 {
+    color: #107BA3;
+  }
+}
+.container .info-bubble .info a img {
   width: 50px;
 }
 footer {
